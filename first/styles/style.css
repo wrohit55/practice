@@ -5,7 +5,7 @@ body {
 }
 
 nav {
-    background-color: #e64242;
+    background-color: #9236e2;
     color: #fff;
     padding: 10px;
     text-align: right;
@@ -67,8 +67,9 @@ footer {
 
 }
 
-
 .home-content-2 {
     height: 40vh;
-    background-color: rgb(15, 65, 65);
+    background-color: rgb(58, 111, 226);
+    margin-top: -4vh;
 }
+
