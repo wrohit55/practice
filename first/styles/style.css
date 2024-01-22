@@ -35,6 +35,12 @@ nav a {
     color: #fff;
     font-weight: bold;
 }
+nav a:hover{
+    color: #d62424;
+    background-color: #f29e20;
+    border-radius: 50px;
+    padding: 10px;
+}
 
 footer {
     background-color: #333;
@@ -51,7 +57,7 @@ footer {
     height: 15vh;
     justify-content: center;
     align-items: center;
-    background-color: #3498db;
+    background-color: #2f6fd6a2;
 
 }
 
@@ -62,6 +68,13 @@ footer {
     display: grid;
     flex-direction: grid;
     grid-template-columns: repeat(4, 1fr);
+    width: 100vw;
+    height: fit-content;
+    align-items: center;
+    background-size: cover;
+    background-position: bottom;
+    justify-content: center;
+
 
 
 }
@@ -74,9 +87,9 @@ footer {
 }
 
 .home-content-2 {
-    height: 40vh;
-    background-color: rgb(58, 111, 226);
-    margin-top: -4vh;
+    height: 100vh;
+    display: grid;
+    background: linear-gradient(rgb(108, 96, 219), #d62424);
 }
 
 /* Card css */
@@ -126,33 +139,42 @@ footer {
     flex-direction: column;
     width: 40%;
     padding: 10px;
-    background-color: #2f3331;
+    background-color: #505ac9;
     color: #fff;
     text-align: center;
     text-decoration: none;
-    border: 1px solid #d62424;
+    border: 1px solid #161414;
     border-radius: 50px;
     cursor: pointer;
     margin-left: 100px;
     margin-bottom: 20px;
 }
-
+.card-button:hover{
+    background-color:  #f29e20;
+    color:#d62424;
+    
+}
 /* contact page css */
 .contact-page {
-    height: 85vh;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    background-position: bottom;
+    background-size: cover;
+    justify-content: center;
     background-image: url(../assests/header-bg.png);
-    margin-top: -60px;
+
 }
 
 .container {
-    max-width: 600px;
-    margin-top: 40vh;
-    margin: 50px auto;
+    height: 450px;
+    width: 600px;
+    margin-top: 80px;
     padding: 20px;
-    background-color: #ffffff;
+    background-color: #2337e6a2;
     box-shadow: 0 0 10px rgba(253, 4, 4, 0.1);
-    border-radius: 5px;
+    border-radius: 10px;
+    color: #fff;
 }
 
 label {
@@ -171,15 +193,44 @@ textarea {
 }
 
 button {
-    background-color: #392fc9;
+    background-color: #ff9143;
     color: #fff;
     padding: 10px 15px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    margin-left: 280px;
+    margin-left: 250px;
+    margin-top: 30px;
+margin-bottom: 0px;
 }
 
 button:hover {
     background-color: #de8b20;
+}
+
+/* testimonial css  */
+.testimonial-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.carousel-inner {
+    text-align: center;
+}
+
+.testimonial-text {
+    font-style: italic;
+    color: #555;
+}
+
+.carousel-item {
+    display: none;
+}
+
+.carousel-item.active {
+    display: block;
 }
